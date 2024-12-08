@@ -330,26 +330,26 @@
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
-  display: flex;
-}
-.footer__content {
-  margin: 60px 80px;
-  background-color: #1f1f1f;
+  /* display: flex; */
   color: white;
-  width: 100%;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__columns {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__column_content_hours {
   flex-direction: column;
-  margin: 0px 80px 0px auto;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
   flex-direction: column;
+  margin-left: 80px;
 }
 
 .footer__logo {
@@ -375,13 +375,17 @@
   color: white;
   text-decoration: none;
   margin-left: 10px;
+  align-items: center;
+  column-gap: 10px;
+  display: flex;
 }
 
 .footer__social-icon {
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
 }
 
 .footer__copyright {
-  margin: 100px auto 0px;
+  margin-top: 100px;
+  justify-content: flex-start;
 }
